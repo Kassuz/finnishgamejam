@@ -29,7 +29,7 @@ public class FishSpawner : MonoBehaviour
 
         GameObject fish;
         float spawnChance = Random.Range(0f, 1f);
-        print(spawnChance);
+        //print(spawnChance);
 
         if (spawnChance < .05f)
             fish = fishPrefabs[3];

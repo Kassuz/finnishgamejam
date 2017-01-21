@@ -75,9 +75,9 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 3.0288153, y: 0.8515787}
-      - {x: 4.1414175, y: 1.0066051}
-      - {x: 3.7091227, y: 1.8146281}
+    - - {x: 3.05579, y: 1.0943491}
+      - {x: 4.114444, y: 1.3302991}
+      - {x: 3.682147, y: 1.9899621}
       - {x: 2.5624332, y: 2.1910791}
       - {x: 0.78160954, y: 2.1829133}
       - {x: -0.95909977, y: 1.4868422}
@@ -146,7 +146,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: ffc66d794035a4540bb4fec19f5599ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebd79084adb904049bc581fdb3436add, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
