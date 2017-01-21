@@ -136,6 +136,7 @@ MonoBehaviour:
   lowerLimitX: 100
   upperLimitY: 500
   lowerLimitY: 250
+  pointValue: 5
 --- !u!212 &212000011123272878
 SpriteRenderer:
   m_ObjectHideFlags: 1

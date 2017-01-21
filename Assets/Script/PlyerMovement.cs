@@ -46,7 +46,8 @@ public class PlyerMovement : MonoBehaviour
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
         }
 
-        rb2d.velocity = new Vector2(horizontalInput * speed, rb2d.velocity.y);
+        rb2d.velocity += new Vector2(horizontalInput * speed, 0);
+        rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x, -speed, speed), rb2d.velocity.y);
     }
 
     private void Flip()

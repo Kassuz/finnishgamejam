@@ -10,12 +10,14 @@ public class Fish : MonoBehaviour
 
     private Rigidbody2D rb2d;
     private SpriteRenderer sprite;
+    private GameManager gm;
 
 
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
 
     }
 
@@ -38,5 +40,12 @@ public class Fish : MonoBehaviour
         Destroy(gameObject, 3f);
     }
 
-
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Player")
+        {
+            gm.AddPoints(pointValue);
+            Destroy(gameObject);
+        }
+    }
 }
