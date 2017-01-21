@@ -47,6 +47,7 @@ public class Fish : MonoBehaviour
         {
             if (gameObject.tag != "Shark")
             {
+                collider.GetComponent<AudioSource>().Play();
                 gm.AddPoints(pointValue);
                 Destroy(gameObject);
             }
