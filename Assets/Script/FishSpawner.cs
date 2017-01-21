@@ -29,13 +29,17 @@ public class FishSpawner : MonoBehaviour
 
         GameObject fish;
         float spawnChance = Random.Range(0f, 1f);
+        print(spawnChance);
 
-        if (spawnChance < .1f)
+        if (spawnChance < .05f)
+            fish = fishPrefabs[3];
+        else if (spawnChance < .15f)
             fish = fishPrefabs[2];
         else if (spawnChance < .4f)
             fish = fishPrefabs[1];
         else
             fish = fishPrefabs[0];
+
 
         Instantiate(fish, new Vector2(spawnX, spawnHeight), Quaternion.identity);
     }

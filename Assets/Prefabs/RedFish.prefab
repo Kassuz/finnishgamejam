@@ -134,9 +134,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperLimitX: 200
   lowerLimitX: 100
-  upperLimitY: 500
+  upperLimitY: 350
   lowerLimitY: 250
-  pointValue: 5
+  deathTime: 3
+  pointValue: 4
 --- !u!212 &212000011123272878
 SpriteRenderer:
   m_ObjectHideFlags: 1

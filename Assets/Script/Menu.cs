@@ -14,5 +14,8 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 	
-    
+    public void ResetScore()
+    {
+        PlayerPrefs.DeleteKey("FaceTheWaves_HighScore");
+    }
 }

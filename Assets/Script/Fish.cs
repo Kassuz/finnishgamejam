@@ -5,6 +5,7 @@ public class Fish : MonoBehaviour
 {
     [SerializeField] private float upperLimitX, lowerLimitX;
     [SerializeField] private float upperLimitY, lowerLimitY;
+    [SerializeField] private float deathTime;
 
     public int pointValue;
 
@@ -37,15 +38,18 @@ public class Fish : MonoBehaviour
         }
         //print("Fish jumps x:" + x + " y:" + y);
         rb2d.AddForce(new Vector2(direction * x, y));
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, deathTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.tag == "Player")
         {
-            gm.AddPoints(pointValue);
-            Destroy(gameObject);
+            if (gameObject.tag != "Shark")
+            {
+                gm.AddPoints(pointValue);
+                Destroy(gameObject);
+            }
         }
     }
 }

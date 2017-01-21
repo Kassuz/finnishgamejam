@@ -136,6 +136,7 @@ MonoBehaviour:
   lowerLimitX: 100
   upperLimitY: 500
   lowerLimitY: 250
+  deathTime: 3
   pointValue: 2
 --- !u!212 &212000014233896316
 SpriteRenderer:

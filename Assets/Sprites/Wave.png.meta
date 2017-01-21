@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 828a89515f7ff6c488d533487b6a543a
-timeCreated: 1484989376
+guid: 4a76bd9fcd891174da8980a0e12a81a5
+timeCreated: 1484998342
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
@@ -44,16 +44,11 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings:
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -3
-    compressionQuality: 50
-    allowsAlphaSplitting: 0
+  buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
     sprites: []
