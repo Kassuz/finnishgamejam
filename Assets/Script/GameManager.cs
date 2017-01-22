@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text pointsText;
     [SerializeField] private Text highScoreText;
     [SerializeField] private GameObject deadPanel;
+    [SerializeField] private AudioSource deadSound;
 
     private int highScore;
     private string highScoreKey = "HighScore";
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
     public void Dead()
     {
         deadPanel.SetActive(true);
+        deadSound.Play();
     }
 
     public void MainMenu()
